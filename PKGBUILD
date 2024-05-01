@@ -11,8 +11,8 @@ source=("git+https://github.com/BlackSnaker/DowTube")
 sha256sums=('SKIP')
 
 package() {
-    install -Dm644 "$srcdir/$pkgname/youtube.png" "${pkgdir}/usr/share/pixmaps/dowtube.png"
-    install -Dm644 "$srcdir/$pkgname/DowTube.desktop" "${pkgdir}/usr/share/applications/dowtube.desktop"
-    install -Dm755 "$srcdir/$pkgname/DowTube.py" "${pkgdir}/usr/bin/dowtube"
+    install -Dm644 "$srcdir/DowTube/youtube.png" "${pkgdir}/usr/share/pixmaps/dowtube.png"
+    install -Dm644 "$srcdir/DowTube/DowTube.desktop" "${pkgdir}/usr/share/applications/dowtube.png"
+    install -Dm755 "$srcdir/DowTube/DowTube.py" "${pkgdir}/usr/bin/dowtube"
 }
 
